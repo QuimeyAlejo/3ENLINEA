@@ -1,4 +1,3 @@
-// Variables globales
 let tableroJuego = ['', '', '', '', '', '', '', '', ''];
 let jugadorActual = 'X';
 let juegoTerminado = false;
@@ -8,7 +7,7 @@ const mensajeResultado = document.getElementById('mensaje-resultado');
 
 function actualizarTablero() {
   celdas.forEach((celda, indice) => {
-    celda.textContent = tableroJuego[indice];
+    celda.textContent = " ";
     if (tableroJuego[indice] === 'X') {
       celda.style.backgroundColor = 'green'; // ACA CAMBIAMOS CUANDO SE TOCA EL LUGAR AL COLOR QUE SELECCIONAMOS OSEA EL VERDE
     } else if (tableroJuego[indice] === 'O') {
@@ -71,7 +70,7 @@ function reiniciarJuego() {
 
 celdas.forEach((celda, indice) => {
   celda.addEventListener('click', () => {
-    // Si el juego ya ha terminado o la celda ya ha sido marcada, no hacer nada
+  
     if (juegoTerminado || tableroJuego[indice]) {
       return;
     }
