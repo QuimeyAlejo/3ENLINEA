@@ -1,0 +1,32 @@
+PARCIAL 2 - JAVASCRIPT - PROGRAMACIÓN 2 - TUP - UTN FRRO
+
+A partir de los archivos que se encuentran junto a este enunciado, desarrolle todo el código javascript 
+necesario para que funcione el juego "tres en línea". En lugar de usar X y O para rellenar los casilleros, 
+utilice dos colores para rellenar los casilleros.
+
+Se sugiere usar arreglos para guardar el valor de cada casillero.
+Los mensajes se deberán mostrar dentro de un div que debe desaparecer luego de 5 segundos de ser mostrado.
+
+Respete la escructura de carpetas y archivos.
+Debe realizar la entrega en un archivo .zip con el nombre de archivo: "apellido_nombre.zip".
+Para consultas, puede utilizar la mensajería del CVG.
+
+-----
+
+"Tres en línea"
+Dado un tablero de 3x3 casilleros, el juego se desarrolla entre dos jugadores, denominados Jugador 1 (X) y Jugador 2 (O).
+ Cada jugador, de manera alternada, debe seleccionar un casillero vacío del tablero y colocar en él su símbolo correspondiente
+  (X para Jugador 1, O para Jugador 2). El objetivo de cada jugador es formar una línea continua de tres símbolos idénticos, 
+  ya sea en una fila, una columna o en una de las dos diagonales.
+
+Reglas:
+
+    El juego se inicia con el tablero vacío.
+    Los jugadores se turnan para jugar, comenzando el Jugador 1 (X).
+    Los jugadores solo pueden colocar su símbolo en casilleros vacíos.
+    Gana el jugador que logre alinear tres de sus símbolos de forma consecutiva en cualquiera de las siguientes direcciones:
+        Horizontal
+        Vertical
+        Diagonal
+    Si todos los casilleros son ocupados sin que ninguno de los jugadores logre formar una línea de tres símbolos consecutivos, 
+    el juego termina en empate.
