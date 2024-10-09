@@ -7,7 +7,6 @@ const mensajeResultado = document.getElementById('mensaje-resultado');
 
 function actualizarTablero() {
   celdas.forEach((celda, indice) => {
-    celda.textContent = " ";
     if (tableroJuego[indice] === 'X') {
       celda.style.backgroundColor = 'green'; // ACA CAMBIAMOS CUANDO SE TOCA EL LUGAR AL COLOR QUE SELECCIONAMOS OSEA EL VERDE
     } else if (tableroJuego[indice] === 'O') {
